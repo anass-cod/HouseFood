@@ -8,6 +8,12 @@ function wathsape() {
 }
 
 function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
+    let navLink = document.getElementById("nav-links")
+    navLink.classList.toggle("active");
+    if(innerWidth <= 700){
+        document.querySelectorAll("#nav-links a").forEach(e => e.onclick = () => {
+            navLink.classList.remove("active")
+        } )
+    }
 }
 
