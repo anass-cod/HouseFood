@@ -1,0 +1,99 @@
+{
+  "tacos_frites": [
+    {
+      "id" : 1 ,
+      "name": "Tacos poulet",
+      "pricesTaill": {
+        "N": 25,
+        "XL": 35,
+        "XXL": 50
+      }
+    },
+    {
+      "id" : 2 ,
+      "name": "Tacos Saucisse",
+      "pricesTaill": {
+        "N": 25,
+        "XL": 32,
+        "XXL": 40
+      }
+    },
+    {
+      "id" : 3 ,
+      "name": "Tacos Mix",
+      "pricesTaill": {
+        "N" : 28 ,
+        "XL": 35,
+        "XXL": 50
+      }
+    },
+    {
+      "id" : 4 ,
+      "name": "Tacos Viande hachée",
+      "pricesTaill": {
+        "N": 25,
+        "XL": 35,
+        "XXL": 50
+      }
+    }
+  ],
+  "pasticcio": [
+    {
+      "id" : 5 ,
+      "name": "Pasticcio Poulet",
+      "price": 27
+    },
+    {
+      "id" : 6 ,
+      "name": "Pasticcio Saucisse",
+      "price": 25
+    },
+    {
+      "id" : 7 ,
+      "name": "Pasticcio Viande hachée",
+      "price": 27
+    },
+    {
+      "id" : 8 ,
+      "name": "Pasticcio Mix",
+      "price": 29
+    }
+  ],
+  "tacos_xl_frites": [
+    {
+      "id" : 9 ,
+      "name": "Crispy",
+      "description": "POULET CRESPÉ - NUGGETS - JUMBO",
+      "price": 40
+    },
+    {
+      "id" : 10 ,
+      "name": "Alfredo",
+      "description": "VIANDE HACHÉE - POULET - SAUCE BLANCHE",
+      "price": 35
+    },
+    {
+      "id" : 11 ,
+      "name": "House",
+      "description": "CHEDDAR - SAUCISSE - JUMBO - NUGGET",
+      "price": 35
+    }
+  ],
+  "burgers_frites": [
+    {
+      "id" : 12,
+      "name": "Big burger",
+      "price": 30
+    },
+    {
+      "id" : 13 ,
+      "name": "Classic burger",
+      "price": 25
+    },
+    {
+      "id" : 14 ,
+      "name": "Chicken burger",
+      "price": 25
+    }
+  ]
+}

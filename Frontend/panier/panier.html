@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./panier.css">
+    <title>panier</title>
+</head>
+
+<body>
+    <header>
+        <button onclick="location.href='../menu/menu.html'" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h2>Panier</h2>
+
+    </header>
+    <section>
+        <div class="error-message" id="errorMessage">
+            Une erreur est survenue lors de la confirmation de votre commande.
+        </div>
+<div class="confirm" id="confirm">
+    <div class="confirm-box">
+
+        <h3>Confirmation de commande</h3>
+
+        <div id="commendes">
+            <!-- Les commandes seront ajoutées ici -->
+        </div>
+
+        <div class="confirm-buttons">
+            <button id="ok">OK</button>
+            <button id="no">NO</button>
+        </div>
+
+    </div>
+</div>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Prix</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        Total : <span id="total"></span>
+                    </td>
+                    <td colspan="2">
+                        <button class="confirme" onclick="confirme()">Confirme</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <script src="./panier.js"></script>
+</body>
+
+</html>

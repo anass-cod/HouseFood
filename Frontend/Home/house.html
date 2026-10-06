@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>House Food</title>
+</head>
+
+<body>
+    <section class="hero" id="home">
+        <header>
+
+            <img src="../imgs/logo.PNG" alt="House Food">
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul id="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="content-alert">
+                <div class="alert" id="alert">
+                    Plat ajouté au panier !
+                </div>
+            </div>
+        </header>
+        <div class="hero-content">
+            <h2>Bienvenue chez</h2>
+            <h1>House Food</h1>
+            <h3>Le goût qui fait la différence !</h3>
+            <p>Découvrez nos burgers, tacos, pizzas et snacks préparés avec des ingrédients frais et beaucoup de
+                passion.</p>
+            <button onclick="location.href='#menu'">voir menu</button>
+        </div>
+    </section>
+    <section id="menu">
+        <div class="cards-container">
+            <h1>Découvrez nos menu</h1>
+            <div class="voirPlas">
+                    <a href="../menu/menu.html">voir tous les plas</a>
+                </div>
+            <div id="cards" class="cards">
+                
+
+                <div class="product-info" id="parent2">
+                    <h3>Tacos Saucisse (N)</h3>
+
+                    <span class="price">25DH</span>
+                    <div class="Taill" id="div2">
+                        <button class="active" onclick="classAndActive('div2' , this , 'tacos_frites' , 2 , 'N', 'parent2')">N</button>
+                        <button onclick="classAndActive('div2' , this , 'tacos_frites' , 2 , 'XL', 'parent2')">XL</button>
+                        <button onclick="classAndActive('div2' , this , 'tacos_frites'  , 2 , 'XXL', 'parent2')">XXL</button>
+                    </div>
+                    <button onclick="commender(2 , 'tacos_frites' , 'N')">Commander</button>
+                </div>
+
+
+
+                <div class="product-info" id="parent6">
+                    <h3>Pasticcio Saucisse </h3>
+
+                    <span class="price">25DH</span>
+
+                    <button onclick="commender(6 , 'pasticcio' , undefined)">Commander</button>
+                </div>
+
+
+
+                <div class="product-info" id="parent10">
+                    <h3>Alfredo </h3>
+                    <p>VIANDE HACHÉE - POULET - SAUCE BLANCHE </p>
+                    <span class="price">35DH</span>
+
+                    <button onclick="commender(10 , 'tacos_xl_frites' , undefined)">Commander</button>
+                </div>
+
+                <div class="product-info" id="parent14">
+                    <h3>Chicken burger </h3>
+
+                    <span class="price">25DH</span>
+
+                    <button onclick="commender(14 , 'burgers_frites' , undefined)">Commander</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h1 class="subtitle">À PROPOS DE NOUS</h1>
+        <div class="container">
+
+            <div class="about-image">
+                <img src="../imgs/logo.PNG" alt="House Food">
+            </div>
+
+            <div class="about-content">
+
+
+                <h2>Bienvenue chez House Food</h2>
+
+                <p>
+                    Chez House Food, nous préparons des snacks savoureux
+                    avec des ingrédients soigneusement sélectionnés.
+                </p>
+
+                <p>
+                    Notre objectif est de vous offrir un repas délicieux,
+                    généreux et servi avec le sourire.
+                </p>
+
+                <button onclick="location.href='#contact'" class="btn">Nous contacter</button>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="contact" class="contact">
+
+        <div class="contact-title">
+            <h1>Contactez-nous</h1>
+
+            <p>
+                Une question ou une commande ?
+                Nous sommes à votre disposition.
+            </p>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="cardsContact">
+            <div class="contact-card">
+
+                <div class="icon">
+                    ☎
+                </div>
+
+                <h3>WhatsApp</h3>
+
+                <p>
+                    Contactez-nous directement
+                    pour passer votre commande.
+                </p>
+
+                <button onclick="wathsape()" class="contact-btn">
+                    Contacter
+                </button>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="contact-card">
+
+                <div class="icon">
+                    ✉
+                </div>
+
+                <h3>Email</h3>
+
+                <p>
+                    Envoyez-nous votre message
+                    par email.
+                </p>
+
+                <button onclick="email()" class="contact-btn">
+                    Envoyer un email
+                </button>
+
+            </div>
+
+
+
+        </div>
+    </section>
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <img src="../imgs/logo.PNG" alt="House Food">
+
+                <p>
+                    Le goût qui fait la différence !
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Navigation</h3>
+
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+
+                <p>Téléphone : 07 86 82 99 91</p>
+                <p>Horaires : 14:00 - 02:00</p>
+                <div class="social-icons">
+
+                    <a href="https://wa.me/212786829991" target="_blank" class="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="" class="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/house_food_meknes/?__pwa=1#" target="_blank" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 House Food. Tous droits réservés.</p>
+        </div>
+
+    </footer>
+    <script src="./script.js"></script>
+    <script src="../Ensemble.js"></script>
+</body>
+
+</html>

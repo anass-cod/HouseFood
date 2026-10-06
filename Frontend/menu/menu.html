@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./menu.css">
+    <title>menu House Food</title>
+</head>
+
+<body>
+    <header>
+        <button onclick="location.href='../Home/house.html'" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h2>menu de House Food</h2>
+
+    </header>
+    <section>
+        <nav>
+            <div class="search-content">
+                <input type="text" id="search" placeholder="Recherche">
+                <button onclick="debutSearch()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="filtre-content">
+                <h2>Filtre : </h2>
+                <select id="categorie">
+                    <option value="all">Toutes les catégories</option>
+                    <option value="tacos_frites">Tacos & Frites</option>
+                    <option value="pasticcio">Pasticcio</option>
+                    <option value="tacos_xl_frites">Tacos XL & Frites</option>
+                    <option value="burgers_frites">Burgers & Frites</option>
+                </select>
+            </div>
+            <button onclick="location.href='../panier/panier.html'" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+
+            <div class="content-alert">
+                <div class="alert" id="alert">
+                    Plat ajouté au panier !
+                </div>
+            </div>
+        </nav>
+        <div id="cards" class="cards">
+
+
+
+            <div class="product-info">
+                <h3>Pizza Viande Hachée</h3>
+                <p>Une pizza savoureuse préparée avec de la viande hachée.</p>
+                <span class="price">28 MAD</span>
+                <button>Commander</button>
+            </div>
+
+
+
+            <div class="product-info">
+                <h3>Tacos Poulet Crispy</h3>
+                <p>Un tacos généreux avec du poulet crispy et une sauce spéciale.</p>
+                <span class="price">22 MAD</span>
+                <button>Commander</button>
+            </div>
+
+
+
+            <div class="product-info">
+                <h3>Burger Poulet Crispy</h3>
+                <p>Un burger gourmand avec du poulet crispy et du fromage.</p>
+                <span class="price">25 MAD</span>
+                <button>Commander</button>
+            </div>
+
+
+
+            <div class="product-info">
+                <h3>Pasticcio Mixte</h3>
+                <p>Un délicieux pasticcio préparé avec une garniture mixte.</p>
+                <span class="price">32 MAD</span>
+                <button>Commander</button>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="./menu.js"></script>
+    <script src="../Ensemble.js"></script>
+</body>
+
+</html>
